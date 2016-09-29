@@ -1,0 +1,185 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(bootstrap.min.css);
+/* line 5, I:/programs/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* line 22, I:/programs/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1; }
+
+/* line 24, I:/programs/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 26, I:/programs/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 28, I:/programs/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 30, I:/programs/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 103, I:/programs/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 32, I:/programs/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 116, I:/programs/Koala/rubygems/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* line 23, ../sass/style.scss */
+body {
+  font-family: "Lato", sans-serif; }
+
+/* line 26, ../sass/style.scss */
+.nav > li > a:hover, .nav > li > a:focus {
+  background: none; }
+
+/* line 29, ../sass/style.scss */
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background: none; }
+
+/* line 32, ../sass/style.scss */
+a:hover {
+  text-decoration: none; }
+
+/* line 35, ../sass/style.scss */
+.slide {
+  color: white;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  background: url("../img/bg/bg.jpg") no-repeat left center;
+  background-size: cover; }
+  /* line 40, ../sass/style.scss */
+  .slide h1 {
+    font-size: 52px;
+    font-weight: lighter;
+    margin-top: 170px; }
+  /* line 45, ../sass/style.scss */
+  .slide p {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 450px;
+    line-height: 25px; }
+  /* line 51, ../sass/style.scss */
+  .slide .logo {
+    background: url("../img/logo/logo.png") no-repeat center center;
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    margin: 20px 25px; }
+  /* line 60, ../sass/style.scss */
+  .slide .header .nav a, .slide .header .nav a:hover, .slide .header .nav a:focus {
+    color: white; }
+  /* line 63, ../sass/style.scss */
+  .slide .header .nav ul {
+    background: #fe992a; }
+  /* line 66, ../sass/style.scss */
+  .slide .header .nav li {
+    display: inline-block; }
+
+/* line 73, ../sass/style.scss */
+.home {
+  line-height: 28px; }
+  /* line 76, ../sass/style.scss */
+  .home .quote {
+    margin-top: 30px;
+    position: relative; }
+    /* line 79, ../sass/style.scss */
+    .home .quote .q {
+      font-size: 28px;
+      margin-top: 10px;
+      color: #fe992a;
+      font-style: italic; }
+    /* line 85, ../sass/style.scss */
+    .home .quote p {
+      color: #fe992a;
+      font-size: 20px;
+      font-style: italic; }
+    /* line 90, ../sass/style.scss */
+    .home .quote .buttons {
+      width: 60px;
+      height: 30px;
+      margin-top: 65px;
+      margin-bottom: 105px; }
+      /* line 95, ../sass/style.scss */
+      .home .quote .buttons .next, .home .quote .buttons .back {
+        width: 30px;
+        float: left;
+        text-align: center;
+        color: white;
+        cursor: pointer; }
+        /* line 101, ../sass/style.scss */
+        .home .quote .buttons .next span, .home .quote .buttons .back span {
+          font-size: 12px; }
+      /* line 105, ../sass/style.scss */
+      .home .quote .buttons .next:hover, .home .quote .buttons .back:hover {
+        background: #fec07c; }
+      /* line 108, ../sass/style.scss */
+      .home .quote .buttons .next {
+        background: #fe992a; }
+      /* line 111, ../sass/style.scss */
+      .home .quote .buttons .back {
+        background: #ffba6e; }
+  /* line 116, ../sass/style.scss */
+  .home .paragraph {
+    margin-top: 64px;
+    margin-bottom: 180px; }
+    /* line 119, ../sass/style.scss */
+    .home .paragraph h2 {
+      color: #fe992a;
+      font-size: 24px;
+      margin-bottom: 25px; }
+    /* line 124, ../sass/style.scss */
+    .home .paragraph p {
+      font-size: 14px;
+      color: #737c85; }
+
+/* line 130, ../sass/style.scss */
+.footer {
+  background: #e77471;
+  color: white;
+  font-size: 12px; }
+  /* line 134, ../sass/style.scss */
+  .footer a {
+    color: white; }
+  /* line 137, ../sass/style.scss */
+  .footer ul {
+    margin-top: 50px; }
+  /* line 140, ../sass/style.scss */
+  .footer li {
+    margin-bottom: 15px; }
+  /* line 143, ../sass/style.scss */
+  .footer li:first-child {
+    font-weight: bold; }

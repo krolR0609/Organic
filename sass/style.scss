@@ -1,0 +1,147 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+ @import "compass/reset";
+ @import "bootstrap.min.css";
+
+ $font16: 16px;
+ $font20: 20px;
+ $font12: 12px;
+ $font14: 14px;
+ $font52: 52px;
+
+ $C_orange: #fe992a;
+ $C_orange_h: #ffba6e;
+ $C_grey: #737c85;
+ $C_red: #e77471;
+ $C_white: white;
+
+ $font:'Lato', sans-serif;
+
+ body{
+ 	font-family: $font;
+ }
+ .nav>li>a:hover, .nav>li>a:focus{
+ 	background: none;
+ }
+ .nav .open>a, .nav .open>a:hover, .nav .open>a:focus{
+ 	background: none;
+ }
+ a:hover{
+		text-decoration: none;
+	}
+ .slide{
+ 	color: $C_white;
+ 	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+ 	background: url("../img/bg/bg.jpg") no-repeat  left center ;
+ 	background-size: cover;
+ 	h1{
+ 		font-size: $font52;
+ 		font-weight: lighter;
+ 		margin-top: 170px;
+ 	}
+ 	p{
+ 		font-size: $font14;
+ 		margin-top: 30px;
+ 		margin-bottom: 450px;
+ 		line-height: 25px;
+ 	}
+ 	.logo{
+ 		background: url("../img/logo/logo.png") no-repeat center center;
+ 		width: 75px;
+ 		height: 75px;
+ 		display: inline-block;
+ 		margin: 20px 25px;
+ 	}
+ 	.header{
+ 		.nav{
+ 			a, a:hover, a:focus{
+ 				color:white;
+ 			}
+ 			ul{
+ 				background: $C_orange;
+ 			}
+ 			li{
+ 				display: inline-block;
+ 			}
+ 		}
+ 	}
+ 	
+ }
+ .home{
+ 	line-height: 28px;
+
+ 	.quote{
+ 		margin-top: 30px;
+ 		position: relative;
+ 		.q{
+ 			font-size: 28px;
+ 			margin-top: 10px;
+ 			color: $C_orange;
+ 			font-style: italic;
+ 		}
+ 		p{
+ 			color: $C_orange;
+ 			font-size: $font20;
+ 			font-style: italic;
+ 		}
+ 		.buttons{
+ 			width: 60px;
+ 			height: 30px;
+ 			margin-top: 65px;
+ 			margin-bottom: 105px;
+ 			.next, .back{
+ 				width: 30px;
+ 				float: left;
+ 				text-align: center;
+ 				color: $C_white;
+ 				cursor: pointer;
+ 				span{
+ 					font-size: 12px;
+ 				}
+ 			}
+ 			.next:hover, .back:hover{
+ 				background: rgba(254,192,124,1);
+ 			}
+ 			.next{
+ 				background: $C_orange;
+ 			}
+ 			.back{
+ 				background: $C_orange_h;
+ 			}
+ 		}
+ 	}
+ 	.paragraph{
+ 		margin-top: 64px;
+ 		margin-bottom: 180px;
+ 		h2{
+ 			color: $C_orange;
+ 			font-size: 24px;
+ 			margin-bottom: 25px;
+ 		}	
+ 		p{
+ 			font-size: $font14;
+ 			color: $C_grey;
+ 		}
+ 	}
+ }
+.footer{
+	background: $C_red;
+	color: $C_white;
+	font-size: $font12;
+	a{
+		color: $C_white;
+	}
+	ul{
+		margin-top: 50px;
+	}
+	li{
+		margin-bottom: 15px;
+	}
+	li:first-child{
+		font-weight: bold;
+
+	}
+}
